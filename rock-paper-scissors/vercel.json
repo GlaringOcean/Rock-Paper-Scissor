@@ -6,21 +6,22 @@
             "destination": "../htmlCode/home.html"
         },
         {
-            "source": "/html/:path*",
+            "source": "../html/:path*",
             "destination": "../htmlCode/:path*"
         },
         {
-            "source": "/css/:path*",
+            "source": "../css/:path*",
             "destination": "../cssCode/:path*"
         },
         {
-            "source": "/js/:path*",
+            "source": "../js/:path*",
             "destination": "../jsCode/:path*"
         },
         {
-            "source": "/assets/:path*",
+            "source": "../assets/:path*",
             "destination": "../assets/:path*"
         }
     ]
 
 }
+
