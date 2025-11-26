@@ -3,23 +3,24 @@
     "rewrites": [
         {
             "source": "/",
-            "destination": "/htmlCode/home.html"
+            "destination": "../htmlCode/home.html"
         },
         {
             "source": "/html/:path*",
-            "destination": "/htmlCode/:path*"
+            "destination": "../htmlCode/:path*"
         },
         {
             "source": "/css/:path*",
-            "destination": "/cssCode/:path*"
+            "destination": "../cssCode/:path*"
         },
         {
             "source": "/js/:path*",
-            "destination": "/jsCode/:path*"
+            "destination": "../jsCode/:path*"
         },
         {
             "source": "/assets/:path*",
-            "destination": "/assets/:path*"
+            "destination": "../assets/:path*"
         }
     ]
+
 }
