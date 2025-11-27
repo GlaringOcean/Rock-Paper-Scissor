@@ -6,15 +6,15 @@
       "destination": "/apps/htmlCode/home.html"
     },
     {
-      "source": "/htmlCode/:path*",
+      "source": "/html/:path*",
       "destination": "/apps/htmlCode/:path*"
     },
     {
-      "source": "apps/cssCode/:path*",
+      "source": "/css/:path*",
       "destination": "/apps/cssCode/:path*"
     },
     {
-      "source": "apps/jsCode/:path*",
+      "source": "/js/:path*",
       "destination": "/apps/jsCode/:path*"
     },
     {
@@ -23,5 +23,6 @@
     }
   ]
 }
+
 
 
