@@ -6,7 +6,7 @@
       "destination": "/apps/htmlCode/home.html"
     },
     {
-      "source": "/apps/htmlCode/:path*",
+      "source": "/htmlCode/:path*",
       "destination": "/apps/htmlCode/:path*"
     },
     {
@@ -23,4 +23,5 @@
     }
   ]
 }
+
 
