@@ -9,7 +9,7 @@ main.home-container {
 
 .home-inner {
     width: 100%;
-    max-width: var(--max-width);
+    max-width: 1440px;
     margin: 0 auto;
     padding: 2.5rem 1.75rem;
     border-radius: 24px;
@@ -34,7 +34,6 @@ main.home-container {
     margin-bottom: 2rem;
 }
 
-/* WRAPPER BUTTONS DI HOME */
 .home-buttons {
     display: flex;
     flex-direction: column;
@@ -43,7 +42,6 @@ main.home-container {
     max-width: 360px;
 }
 
-/* LARGE PHONE / SMALL TABLET (≥ 480px) */
 @media (min-width: 480px) {
     .home-inner {
         padding: 2.75rem 2.25rem;
@@ -64,7 +62,6 @@ main.home-container {
     }
 }
 
-/* TABLET PORTRAIT (≥ 768px) */
 @media (min-width: 768px) {
     main.home-container {
         padding-top: 3rem;
@@ -96,7 +93,6 @@ main.home-container {
     }
 }
 
-/* LAPTOP / 720p-ish (≥ 1024px) */
 @media (min-width: 1024px) {
     .home-inner {
         flex-direction: column;
@@ -113,7 +109,6 @@ main.home-container {
     }
 }
 
-/* DESKTOP 1080p (≥ 1366px) */
 @media (min-width: 1366px) {
     main.home-container {
         padding-inline: 10vw;
@@ -137,7 +132,6 @@ main.home-container {
     }
 }
 
-/* 2K / WIDE DESKTOP (≥ 1920px) */
 @media (min-width: 1920px) {
     main.home-container {
         padding-inline: 14vw;
@@ -160,7 +154,6 @@ main.home-container {
     }
 }
 
-/* ULTRA-WIDE / ≥ 2560px */
 @media (min-width: 2560px) {
     .home-inner {
         transform: scale(1.05);
