@@ -1,0 +1,93 @@
+main.rules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.rules-inner {
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border-radius: 24px;
+    padding: 1.8rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeInUp 1s ease-out;
+    margin: 0 auto 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.rules-title {
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    background: linear-gradient(45deg, #f39c12, #e74c3c, #9b59b6, #3498db);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 300% 300%;
+    animation: gradientShift 3s ease-in-out infinite;
+    text-shadow: 0 0 30px rgba(243, 156, 18, 0.3);
+}
+
+.rules-icon {
+    -webkit-text-fill-color: initial !important;
+    filter: drop-shadow(0 0 6px rgba(243, 156, 18, 0.6));
+    font-size: 2.8rem;
+}
+
+.rules-subtitle {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 1.6rem;
+    text-align: center;
+}
+
+.rules-heading {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: #ffd700;
+}
+
+.rules-text {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    margin-bottom: 0.35rem;
+    text-align: left;
+}
+
+.rules-highlight {
+    margin-top: 2rem;
+    padding: 1.4rem 1.2rem;
+    border-radius: 15px;
+    background: linear-gradient(
+        135deg,
+        rgba(243, 156, 18, 0.1),
+        rgba(231, 76, 60, 0.1)
+    );
+    border: 2px solid rgba(243, 156, 18, 0.3);
+    box-shadow: 0 0 20px rgba(243, 156, 18, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+    text-align: center;
+}
+
+.rules-highlight-text {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2.2rem;
+    width: 100%;
+    max-width: 260px;
+    align-self: center;
+}
+
+about h2.section-heading {
+  margin-top: 2rem;
+}
