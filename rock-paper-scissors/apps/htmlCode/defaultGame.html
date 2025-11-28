@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Default Game</title>
+</head>
+<body>
+    <main>
+
+    </main>
+
+    <div class="rps-game">
+        <div class="rps-choices">
+            <button class="choice-btn" data-choice="rock">
+            <img src="../assets/Rock.png" alt="Rock">
+            </button>
+
+            <button class="choice-btn" data-choice="paper">
+            <img src="../assets/Paper.png" alt="Paper">
+            </button>
+
+            <button class="choice-btn" data-choice="scissors">
+            <img src="../assets/Scissors.png" alt="Scissors">
+            </button>
+        </div>
+
+        <div class="rps-status">
+            <p class="score">
+            You: <span id="player-score">0</span> &nbsp;|&nbsp;
+            Computer: <span id="computer-score">0</span>
+            </p>
+            <p id="round-result">Click an icon to start the match.</p>
+            <p id="final-result"></p>
+        </div>
+    </div>
+    
+</body>
+    <script src="../jsCode/game.js"></script>
+    <script src="../jsCode/defaultGame.js"></script>
+</html>
