@@ -1,139 +1,139 @@
 @media (min-width: 220px) {
-    .home-inner {
+    .select-inner {
         padding: 2.75rem 2.25rem;
         border-radius: 26px;
         height: 100%;
     }
 
-    .home-title {
+    .select-title {
         font-size: 2rem;
     }
 
-    .home-subtitle {
+    .select-subtitle {
         font-size: 1rem;
     }
 
-    .home-buttons .btn {
+    .select-buttons .btn {
         font-size: 0.9rem;
         padding: 1rem 1.4rem;
     }
 }
 
 @media (min-width: 480px) {
-    .home-inner {
+    .select-inner {
         padding: 2.75rem 2.25rem;
         border-radius: 26px;
         height: 80%;
     }
 
-    .home-title {
+    .select-title {
         font-size: 2rem;
     }
 
-    .home-subtitle {
+    .select-subtitle {
         font-size: 1rem;
     }
 
-    .home-buttons .btn {
+    .select-buttons .btn {
         font-size: 0.9rem;
         padding: 1rem 1.4rem;
     }
 }
 
 @media (min-width: 768px) {
-    main.home-container {
+    main.select-container {
         padding-top: 3rem;
         padding-bottom: 4rem;
     }
 
-    .home-inner {
+    .select-inner {
         padding: 3rem 3rem;
     }
 
-    .home-title {
+    .select-title {
         font-size: 2.2rem;
         margin-bottom: 1rem;
     }
 
-    .home-subtitle {
+    .select-subtitle {
         font-size: 1.05rem;
         margin-bottom: 2.3rem;
     }
 
-    .home-buttons {
+    .select-buttons {
         flex-direction: row;
         justify-content: center;
         max-width: 540px;
     }
 
-    .home-buttons .btn {
+    .select-buttons .btn {
         flex: 1;
     }
 }
 
 @media (min-width: 1024px) {
-    .home-inner {
+    .select-inner {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .home-title {
+    .select-title {
         font-size: 2.4rem;
     }
 
-    .home-subtitle {
+    .select-subtitle {
         font-size: 1.1rem;
     }
 }
 
 @media (min-width: 1366px) {
-    main.home-container {
+    main.select-container {
         padding-inline: 10vw;
     }
 
-    .home-inner {
+    .select-inner {
         padding: 3.2rem 3.4rem;
     }
 
-    .home-title {
+    .select-title {
         font-size: 2.7rem;
     }
 
-    .home-subtitle {
+    .select-subtitle {
         font-size: 1.12rem;
     }
 
-    .home-buttons .btn {
+    .select-buttons .btn {
         font-size: 0.95rem;
         padding: 1rem 1.6rem;
     }
 }
 
 @media (min-width: 1920px) {
-    main.home-container {
+    main.select-container {
         padding-inline: 14vw;
         padding-top: 4rem;
         padding-bottom: 5rem;
     }
 
-    .home-inner {
+    .select-inner {
         padding: 3.4rem 3.8rem;
         border-radius: 28px;
         transform: scale(1.03);
     }
 
-    .home-title {
+    .select-title {
         font-size: 3rem;
     }
 
-    .home-subtitle {
+    .select-subtitle {
         font-size: 1.15rem;
     }
 }
 
 @media (min-width: 2560px) {
-    .home-inner {
+    .select-inner {
         transform: scale(1.05);
     }
 }
