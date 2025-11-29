@@ -1,5 +1,4 @@
-main.rules {
-    flex: 1;
+main.select {
     padding: 2.5rem 6vw 3.5rem;
     display: flex;
     flex-direction: column;
@@ -7,9 +6,10 @@ main.rules {
     justify-content: center;
 }
 
-.rules-inner {
-    width: 100%;
-    max-width: var(--max-width);
+.select-inner {
+    width: 70%;
+    height: 60%;
+    max-width: 70vw;
     margin: 0 auto;
     padding: 2.5rem 1.75rem;
     border-radius: 24px;
@@ -19,11 +19,11 @@ main.rules {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    animation: fadeInUp 1s ease-out;
 }
 
-.rules-title {
+.select-title {
     font-size: 2.9rem;
     text-align: center;
     margin-bottom: 1.2rem;
@@ -36,39 +36,28 @@ main.rules {
     text-shadow: 0 0 30px rgba(243, 156, 18, 0.3);
 }
 
-.rules-icon {
+.select-icon {
     -webkit-text-fill-color: initial !important;
     filter: drop-shadow(0 0 6px rgba(243, 156, 18, 0.6));
     font-size: 2.8rem;
 }
 
-.rules-subtitle {
+.select-subtitle {
     font-size: 1.5rem;
     color: var(--text-muted);
     max-width: 520px;
     margin-bottom: 2rem;
+    text-align: justify;
 }
 
-.rules-buttons {
+.select-buttons {
     display: flex;
     gap: 1rem;
     width: 100%;
     max-width: 360px;
-}
-
-.rules-image{
-    margin-bottom: 1.5rem;
-    display: flex;
-    justify-content: center;  
-}
-
-.rules-image img {
-    width: 600px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 12px;
-    box-shadow: 0 0 22px rgba(129, 140, 248, 0.9);
-    margin-bottom: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .home-buttons {

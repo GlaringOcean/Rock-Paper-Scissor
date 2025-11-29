@@ -1,117 +1,152 @@
-@media (min-width: 480px) {
-    .rules-inner {
-        padding: 2.75rem 2.25rem;
+@media (min-width: 220px) {
+    .home-inner {
+        padding: 2.4rem 2rem;
         border-radius: 26px;
+        min-height: 100%;
     }
 
-    .rules-title {
+    .home-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .home-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .home-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+    }
+
+    .home-buttons .btn {
+        font-size: 0.9rem;
+        padding: 0.9rem 1.3rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 480px) {
+    .home-inner {
+        padding: 2.75rem 2.25rem;
+        border-radius: 26px;
+        min-height: 80%;
+  } 
+
+    .home-title {
         font-size: 2rem;
     }
 
-    .rules-subtitle {
+    .home-subtitle {
         font-size: 1rem;
     }
 
-    .rules-buttons .btn {
+    .home-buttons .btn {
         font-size: 0.9rem;
         padding: 1rem 1.4rem;
+        width: auto;
     }
 }
 
 @media (min-width: 768px) {
-    main.rules {
+    main.home-container {
         padding-top: 3rem;
         padding-bottom: 4rem;
     }
 
-    .rules-inner {
+    .home-inner {
         padding: 3rem 3rem;
     }
 
-    .rules-title {
+    .home-title {
         font-size: 2.2rem;
         margin-bottom: 1rem;
     }
 
-    .rules-subtitle {
+    .home-subtitle {
         font-size: 1.05rem;
         margin-bottom: 2.3rem;
     }
 
-    .rules-buttons {
+  .home-buttons {
         flex-direction: row;
         justify-content: center;
         max-width: 540px;
+        margin-inline: auto;
+        gap: 1rem;
     }
 
-    .rules-buttons .btn {
+    .home-buttons .btn {
         flex: 1;
     }
 }
 
 @media (min-width: 1024px) {
-    .rules-inner {
+     .home-inner {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
-    .rules-title {
+    .home-title {
         font-size: 2.4rem;
     }
 
-    .rules-subtitle {
+     .home-subtitle {
         font-size: 1.1rem;
     }
 }
 
 @media (min-width: 1366px) {
-    main.rules {
+     main.home-container {
         padding-inline: 10vw;
     }
 
-    .rules-inner {
+     .home-inner {
         padding: 3.2rem 3.4rem;
     }
 
-    .rules-title {
+    .home-title {
         font-size: 2.7rem;
     }
 
-    .rules-subtitle {
+     .home-subtitle {
         font-size: 1.12rem;
     }
 
-    .rules-buttons .btn {
+     .home-buttons .btn {
         font-size: 0.95rem;
         padding: 1rem 1.6rem;
     }
 }
 
 @media (min-width: 1920px) {
-    main.rules {
+    main.home-container {
         padding-inline: 14vw;
         padding-top: 4rem;
         padding-bottom: 5rem;
     }
 
-    .rules-inner {
+     .home-inner {
         padding: 3.4rem 3.8rem;
         border-radius: 28px;
         transform: scale(1.03);
     }
 
-    .rules-title {
+     .home-title {
         font-size: 3rem;
     }
 
-    .rules-subtitle {
+  .home-subtitle {
         font-size: 1.15rem;
     }
 }
 
 @media (min-width: 2560px) {
-    .rules-inner {
+     .home-inner {
         transform: scale(1.05);
     }
 }
