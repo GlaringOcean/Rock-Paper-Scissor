@@ -290,7 +290,8 @@ const btnQuit = document.getElementById("btn-quit");
 
 if (btnQuit) {
     btnQuit.addEventListener("click", () => {
-        window.location.href = "home.html";
+        window.location.href = "/html/home.html";
     });
 
 }
+
