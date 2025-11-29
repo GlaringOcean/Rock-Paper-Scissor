@@ -114,3 +114,9 @@
     margin-top: 3rem;
   }
 }
+
+@media (min-width: 2560px) {
+  .about-inner {
+    transform: scale(1.05);
+  }
+}

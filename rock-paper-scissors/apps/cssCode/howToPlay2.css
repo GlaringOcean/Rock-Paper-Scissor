@@ -1,0 +1,117 @@
+@media (min-width: 480px) {
+    .rules-inner {
+        padding: 2.75rem 2.25rem;
+        border-radius: 26px;
+    }
+
+    .rules-title {
+        font-size: 2rem;
+    }
+
+    .rules-subtitle {
+        font-size: 1rem;
+    }
+
+    .rules-buttons .btn {
+        font-size: 0.9rem;
+        padding: 1rem 1.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    main.rules {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .rules-inner {
+        padding: 3rem 3rem;
+    }
+
+    .rules-title {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .rules-subtitle {
+        font-size: 1.05rem;
+        margin-bottom: 2.3rem;
+    }
+
+    .rules-buttons {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 540px;
+    }
+
+    .rules-buttons .btn {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .rules-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .rules-title {
+        font-size: 2.4rem;
+    }
+
+    .rules-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1366px) {
+    main.rules {
+        padding-inline: 10vw;
+    }
+
+    .rules-inner {
+        padding: 3.2rem 3.4rem;
+    }
+
+    .rules-title {
+        font-size: 2.7rem;
+    }
+
+    .rules-subtitle {
+        font-size: 1.12rem;
+    }
+
+    .rules-buttons .btn {
+        font-size: 0.95rem;
+        padding: 1rem 1.6rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    main.rules {
+        padding-inline: 14vw;
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+    }
+
+    .rules-inner {
+        padding: 3.4rem 3.8rem;
+        border-radius: 28px;
+        transform: scale(1.03);
+    }
+
+    .rules-title {
+        font-size: 3rem;
+    }
+
+    .rules-subtitle {
+        font-size: 1.15rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .rules-inner {
+        transform: scale(1.05);
+    }
+}
