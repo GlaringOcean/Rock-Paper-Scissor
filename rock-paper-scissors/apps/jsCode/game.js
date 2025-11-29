@@ -38,9 +38,9 @@ const DELAY_AFTER_COMPUTER_REVEAL = 3000
 
 // IMAGE PATH
 const choiceToImg = {
-    rock: "../assets/Rock.png",
-    paper: "../assets/Paper.png",
-    scissors: "../assets/Scissors.png",
+    rock: "/assets/Rock.png",
+    paper: "/assets/Paper.png",
+    scissors: "/assets/Scissors.png",
 };
 
 function startRulesPopup(duration, onFinish) {
@@ -292,4 +292,5 @@ if (btnQuit) {
     btnQuit.addEventListener("click", () => {
         window.location.href = "home.html";
     });
+
 }
