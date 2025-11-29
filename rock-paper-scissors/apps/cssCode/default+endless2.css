@@ -1,7 +1,8 @@
-@media (min-width: 480px) {
+@media (min-width: 220px) {
   .rules-inner {
-    padding: 2.75rem 2.25rem;
+    padding: 2.4rem 2rem;
     border-radius: 26px;
+    height: 100%;
   }
 
   .rules-title {
@@ -9,15 +10,42 @@
   }
 
   .rules-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .rules-text,
+  .rules-highlight-text {
+    font-size: 0.95rem;
+  }
+
+  .rules-buttons .btn,
+  .home-buttons .btn {
+    font-size: 0.9rem;
+    padding: 1rem 1.4rem;
+  }
+}
+
+
+@media (min-width: 480px) {
+  .rules-inner {
+    padding: 2.75rem 2.25rem;
+  }
+
+  .rules-title {
+    font-size: 2.1rem;
+  }
+
+  .rules-subtitle {
     font-size: 1rem;
   }
-  
+
   .rules-text,
-  .rules-subtitle,
   .rules-highlight-text {
     font-size: 1rem;
   }
 
+  .rules-buttons .btn,
   .home-buttons .btn {
     font-size: 0.9rem;
     padding: 1rem 1.4rem;
@@ -42,6 +70,11 @@
   .rules-subtitle {
     font-size: 1.05rem;
     margin-bottom: 2.3rem;
+  }
+
+  .rules-text,
+  .rules-highlight-text {
+    font-size: 1.02rem;
   }
 
   .home-buttons {
