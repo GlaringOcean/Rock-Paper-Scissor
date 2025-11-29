@@ -1,4 +1,3 @@
-/* POSISI CARD DI TENGAH HALAMAN */
 .game-page {
   flex: 1;
   display: flex;
@@ -7,7 +6,6 @@
   padding: 1.5rem;
 }
 
-/* CARD UTAMA */
 .game-card {
   width: 100%;
   max-width: 900px;
@@ -21,19 +19,6 @@
   margin: 0 auto 2rem;
 }
 
-/* ANIMASI MASUK (SAMA KONSEP DENGAN ABOUT) */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* JUDUL DENGAN GRADIENT SEPERTI ABOUT H1 */
 .game-title {
   font-size: 1.9rem;
   text-align: center;
@@ -47,16 +32,6 @@
   text-shadow: 0 0 30px rgba(243, 156, 18, 0.3);
 }
 
-@keyframes gradientShift {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-/* SUBTITLE */
 .game-subtitle {
   font-size: 0.98rem;
   color: var(--text-muted);
@@ -64,7 +39,6 @@
   margin-bottom: 1.8rem;
 }
 
-/* SCOREBOARD */
 .scoreboard {
   display: flex;
   align-items: center;
@@ -99,7 +73,6 @@
   color: var(--text-muted);
 }
 
-/* PILIHAN ROCK / PAPER / SCISSORS */
 .choices {
   display: flex;
   flex-direction: column;
@@ -150,7 +123,6 @@
   box-shadow: 0 8px 18px rgba(15, 23, 42, 0.9);
 }
 
-/* STATUS BOX */
 .status-box {
   margin-top: 0.5rem;
   margin-bottom: 1.7rem;
@@ -167,91 +139,8 @@
   margin-top: 0.4rem;
 }
 
-/* NAV BUTTONS (BACK + HOME) */
 .game-nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
-}
-
-/* ========= RESPONSIVE ========= */
-
-/* Tablet ke atas */
-@media (min-width: 768px) {
-  .game-card {
-    padding: 2.4rem 2.6rem;
-    max-width: 1000px;
-  }
-
-  .game-title {
-    font-size: 2.1rem;
-  }
-
-  .choices {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .choice-btn {
-    flex: 1;
-    justify-content: center;
-  }
-}
-
-/* Laptop */
-@media (min-width: 1024px) {
-  .game-card {
-    padding: 2.8rem 3rem;
-    max-width: 1100px;
-  }
-
-  .game-title {
-    font-size: 2.3rem;
-  }
-
-  .game-subtitle {
-    font-size: 1.02rem;
-  }
-
-  .score-value {
-    font-size: 2.2rem;
-  }
-}
-
-/* Desktop lebar */
-@media (min-width: 1366px) {
-  .game-card {
-    max-width: 1200px;
-  }
-
-  .game-title {
-    font-size: 2.6rem;
-  }
-
-  .game-subtitle,
-  .round-result,
-  .final-result {
-    font-size: 1.05rem;
-  }
-}
-
-/* 2K */
-@media (min-width: 1920px) {
-  .game-card {
-    max-width: 1300px;
-    padding: 3rem 3.2rem;
-  }
-
-  .game-title {
-    font-size: 2.9rem;
-  }
-
-  .score-value {
-    font-size: 2.6rem;
-  }
-
-  .choice-btn img {
-    width: 64px;
-    height: 64px;
-  }
 }

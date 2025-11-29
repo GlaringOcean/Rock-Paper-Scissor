@@ -44,7 +44,7 @@ main.home-container {
     text-align: justify;
 }
 
-home-buttons {
+.home-buttons {
     display: flex;
     gap: 1rem;
     width: 100%;
