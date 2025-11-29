@@ -1,46 +1,108 @@
-resetGame("click to start the match");
+const ROUND_DURATION = 5;
 
-function playDefaultGame(playerChoice) {
-    if(gameOver) resetGame("New match started. Click to play");
+let isRoundActive = false;
+let currentRound = 1;
 
-    // input validation
-    if(!['rock', 'paper', 'scissors'].includes(playerChoice)) {
-        return roundResultEl.textContent = "Invalid choice. Please click Rock, Paper, or Scissors";
-    }
-    const computerChoice = getComputerChoice();
-    const result = getRoundResult(computerChoice, playerChoice);
+let roundInterval = null;
+let roundTimeoutId = null;
 
-    if(result === 'invalid') {
-        return roundResultEl.textContent = "Something when wrong with the choices";
-    }
-    // score update
-    if(result === 'player') {
-        playerScore++;
-        roundResultEl.textContent = `You chose ${playerChoice}, computer chose ${computerChoice}. You win this round!`;
-    }
-    else if (result === 'computer') {
-        computerScore++;
-        roundResultEl.textContent = `You chose ${playerChoice}, computer chose ${computerChoice}. Computer Win this round!`;
-    }
-    else {
-        roundResultEl.textContent = `You chose ${playerChoice}, computer chose ${computerChoice}. It's a draw!`;
-    }
-    playerScoreEl.textContent = playerScore;
-    computerScoreEl.textContent = computerScore;
+const timerEl = document.getElementById("timer");
+const btnPlayAgain = document.getElementById("btn-playagain");
+const btnChangeMode = document.getElementById("btn-changemode");
 
-    if(playerScore === 2 || computerScore === 2) {
-        gameOver = true;
+function setTimerText(text) {
+    if (timerEl) timerEl.textContent = text;
+}
 
-        if(playerScore > computerScore){
-            finalResultEl.textContent = "You win the match! Click to play again."
+function startRound() {
+    if (gameOver) return;
+
+    isRoundActive = true;
+    clearMainCards();
+
+    let timeLeft = ROUND_DURATION;
+    setTimerText(`Time left: ${timeLeft}s`);
+    showRoundMessage(`Round ${currentRound} – choose your move.`);
+
+    roundInterval = setInterval(() => {
+        timeLeft--;
+        if (timeLeft >= 0) {
+        setTimerText(`Time left: ${timeLeft}s`);
+        } else {
+        clearInterval(roundInterval);
         }
-        else {
-            finalResultEl.textContent = "You lose the match! Click to try again."
-        }
+    }, 1000);
+
+    roundTimeoutId = setTimeout(() => {
+        if (!isRoundActive) return;
+        isRoundActive = false;
+
+        clearInterval(roundInterval);
+        setTimerText("Time's up");
+
+        // RANDOM PLAYER CHOICE
+        const randomPlayer = getComputerChoice();
+        handleRoundEnd(randomPlayer, true, afterRound);
+    }, ROUND_DURATION * 1000);
+}
+
+
+function afterRound(type) {
+    if (gameOver) {
+        setTimerText("Match finished");
+        return;
     }
+
+    if (type === "draw") {
+        startRound();
+    } 
     else {
-        finalResultEl.textContent = "";
+        currentRound++;
+        startRound();
     }
 }
 
-setChoiceClickEvent(playDefaultGame);
+setChoiceClickEvent((choice) => {
+    if (!isRoundActive || gameOver) return;
+
+    isRoundActive = false;
+
+    clearTimeout(roundTimeoutId);
+    clearInterval(roundInterval);
+
+    setTimerText("Waiting for result…");
+
+    handleRoundEnd(choice, false, afterRound);
+});
+
+window.addEventListener("load", () => {
+    resetScores();
+    gameOver = false;
+    currentRound = 1;
+    clearMainCards();
+
+    showRoundMessage("Get ready…");
+    setTimerText("Match starts in 10s");
+
+        startRulesPopup(10, () => {
+        startRound();
+    });
+});
+
+if (btnPlayAgain) {
+    btnPlayAgain.addEventListener("click", () => {
+        if (matchPopup) matchPopup.classList.remove("visible");
+
+        resetScores();
+        gameOver = false;
+        currentRound = 1;
+        clearMainCards();
+        startRound();
+    });
+}
+
+if (btnChangeMode) {
+    btnChangeMode.addEventListener("click", () => {
+        window.location.href = "endlessGame.html";
+    });
+}

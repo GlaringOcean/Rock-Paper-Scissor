@@ -1,0 +1,199 @@
+@media (min-width: 220px) {
+  .choice-btn img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .choice-btn span {
+    font-size: 0.9rem;
+  }
+
+  .game-title {
+    font-size: 1.55rem;
+  }
+
+  .round-result,
+  .final-result {
+    font-size: 0.85rem;
+  }
+
+  .round-timer {
+    font-size: 0.8rem;
+  }
+
+  .choices-display {
+    gap: 1.2rem;
+  }
+
+  .choice-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .rules-content {
+    width: 90%;
+    max-width: 420px;
+    padding: 1.3rem;
+  }
+
+  .rules-text {
+    font-size: 0.85rem;
+  }
+
+  .rules-hint {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .game-card {
+    padding: 2rem;
+  }
+
+  .game-title {
+    font-size: 1.7rem;
+  }
+
+  .score-value {
+    font-size: 1.7rem;
+  }
+
+  .choice-btn img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .choice-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .round-timer {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .game-card {
+    padding: 2.4rem;
+    max-width: 1000px;
+  }
+
+  .choices {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .choice-btn {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .game-title {
+    font-size: 2rem;
+  }
+
+  .choices-display {
+    gap: 2rem;
+  }
+
+  .choice-image {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .game-card {
+    padding: 2.7rem 3rem;
+    max-width: 1100px;
+  }
+
+  .game-title {
+    font-size: 2.3rem;
+  }
+
+  .score-value {
+    font-size: 2.2rem;
+  }
+
+  .choice-btn img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .choice-image {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .game-card {
+    max-width: 1200px;
+  }
+
+  .game-title {
+    font-size: 2.6rem;
+  }
+
+  .game-subtitle,
+  .round-result,
+  .final-result {
+    font-size: 1.05rem;
+  }
+
+  .round-timer {
+    font-size: 1rem;
+  }
+
+  .choice-image {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .game-card {
+    max-width: 1300px;
+    padding: 3rem 3.2rem;
+  }
+
+  .game-title {
+    font-size: 2.9rem;
+  }
+
+  .score-value {
+    font-size: 2.6rem;
+  }
+
+  .choice-btn img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .choice-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .game-card {
+    transform: scale(1.05);
+  }
+
+  .choice-btn img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .choice-image {
+    width: 90px;
+    height: 90px;
+  }
+
+  .game-title {
+    font-size: 3.2rem;
+  }
+}
