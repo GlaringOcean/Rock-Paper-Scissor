@@ -1,0 +1,257 @@
+/* POSISI CARD DI TENGAH HALAMAN */
+.game-page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+/* CARD UTAMA */
+.game-card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  padding: 2rem 2.2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 1s ease-out;
+  margin: 0 auto 2rem;
+}
+
+/* ANIMASI MASUK (SAMA KONSEP DENGAN ABOUT) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* JUDUL DENGAN GRADIENT SEPERTI ABOUT H1 */
+.game-title {
+  font-size: 1.9rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #f39c12, #e74c3c, #9b59b6, #3498db);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 300% 300%;
+  animation: gradientShift 3s ease-in-out infinite;
+  text-shadow: 0 0 30px rgba(243, 156, 18, 0.3);
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* SUBTITLE */
+.game-subtitle {
+  font-size: 0.98rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+
+/* SCOREBOARD */
+.scoreboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}
+
+.score-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.score-divider {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--text-muted);
+}
+
+/* PILIHAN ROCK / PAPER / SCISSORS */
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.choice-btn {
+  border: 1px solid rgba(148, 163, 184, 0.55);
+  border-radius: 16px;
+  padding: 0.9rem 1.1rem;
+  background: radial-gradient(circle at top, #1f2937 0, #020617 55%);
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.8);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease,
+    background 0.18s ease;
+}
+
+.choice-btn img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(129, 140, 248, 0.7);
+}
+
+.choice-btn span {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.choice-btn:hover {
+  transform: translateY(-3px);
+  border-color: rgba(191, 219, 254, 0.9);
+  box-shadow: 0 14px 32px rgba(129, 140, 248, 0.75);
+  background: radial-gradient(circle at top, #111827 0, #020617 60%);
+}
+
+.choice-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.9);
+}
+
+/* STATUS BOX */
+.status-box {
+  margin-top: 0.5rem;
+  margin-bottom: 1.7rem;
+}
+
+.round-result {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.final-result {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+/* NAV BUTTONS (BACK + HOME) */
+.game-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ========= RESPONSIVE ========= */
+
+/* Tablet ke atas */
+@media (min-width: 768px) {
+  .game-card {
+    padding: 2.4rem 2.6rem;
+    max-width: 1000px;
+  }
+
+  .game-title {
+    font-size: 2.1rem;
+  }
+
+  .choices {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .choice-btn {
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  .game-card {
+    padding: 2.8rem 3rem;
+    max-width: 1100px;
+  }
+
+  .game-title {
+    font-size: 2.3rem;
+  }
+
+  .game-subtitle {
+    font-size: 1.02rem;
+  }
+
+  .score-value {
+    font-size: 2.2rem;
+  }
+}
+
+/* Desktop lebar */
+@media (min-width: 1366px) {
+  .game-card {
+    max-width: 1200px;
+  }
+
+  .game-title {
+    font-size: 2.6rem;
+  }
+
+  .game-subtitle,
+  .round-result,
+  .final-result {
+    font-size: 1.05rem;
+  }
+}
+
+/* 2K */
+@media (min-width: 1920px) {
+  .game-card {
+    max-width: 1300px;
+    padding: 3rem 3.2rem;
+  }
+
+  .game-title {
+    font-size: 2.9rem;
+  }
+
+  .score-value {
+    font-size: 2.6rem;
+  }
+
+  .choice-btn img {
+    width: 64px;
+    height: 64px;
+  }
+}

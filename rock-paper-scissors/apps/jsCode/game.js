@@ -17,21 +17,21 @@ function getComputerChoice(){
 
 // rules
 function getRoundResult(computer, player) {
-    if(player == computer) return 'draw';  
+    if(player === computer) return 'draw';  
     
     if (player == 'rock') {
-    return (computer == 'scissors') ? 'player' : 'computer';
+    return (computer === 'scissors') ? 'player' : 'computer';
     } 
     if (player == 'paper') {
-        return (computer == 'rock') ? 'player' : 'computer';
+        return (computer === 'rock') ? 'player' : 'computer';
     }
     if (player == 'scissors') {
-        return (computer == 'paper') ? 'player' : 'computer';
+        return (computer === 'paper') ? 'player' : 'computer';
     }
     return 'invalid'
 }
     
-function resetGame(message = "click an icon to start the match") {
+function resetGame(message = "click to start the match") {
     playerScore = 0;
     computerScore = 0;
     gameOver = false;

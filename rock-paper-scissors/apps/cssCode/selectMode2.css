@@ -1,21 +1,31 @@
 @media (min-width: 220px) {
     .select-inner {
-        padding: 2.75rem 2.25rem;
+        padding: 2.4rem 2rem;
         border-radius: 26px;
-        height: 100%;
+        min-height: 100%;
     }
 
     .select-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
     }
 
     .select-subtitle {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .select-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
     }
 
     .select-buttons .btn {
         font-size: 0.9rem;
-        padding: 1rem 1.4rem;
+        padding: 0.9rem 1.3rem;
+        width: 100%;
     }
 }
 
@@ -23,7 +33,7 @@
     .select-inner {
         padding: 2.75rem 2.25rem;
         border-radius: 26px;
-        height: 80%;
+        min-height: 80%;
     }
 
     .select-title {
@@ -37,6 +47,7 @@
     .select-buttons .btn {
         font-size: 0.9rem;
         padding: 1rem 1.4rem;
+        width: auto;
     }
 }
 
@@ -64,6 +75,8 @@
         flex-direction: row;
         justify-content: center;
         max-width: 540px;
+        margin-inline: auto;
+        gap: 1rem;
     }
 
     .select-buttons .btn {
@@ -78,11 +91,11 @@
         text-align: center;
     }
 
-    .select-title {
+     .select-title {
         font-size: 2.4rem;
     }
 
-    .select-subtitle {
+     .select-subtitle {
         font-size: 1.1rem;
     }
 }
