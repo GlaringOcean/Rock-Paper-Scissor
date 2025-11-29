@@ -103,6 +103,7 @@ if (btnPlayAgain) {
 
 if (btnChangeMode) {
     btnChangeMode.addEventListener("click", () => {
-        window.location.href = "endlessGame.html";
+        window.location.href = "/html/endlessGame.html";
     });
+
 }
