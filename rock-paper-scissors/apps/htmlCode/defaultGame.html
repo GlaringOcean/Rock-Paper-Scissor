@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Default Game</title>
+    <title>🎯 Default Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <link rel="icon" type="image/png" href="/assets/logo.png">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <iframe src="audio.html">style="border: none;</iframe>
+    <iframe src="/html/audio.html"></iframe>
 
     <div class="game-wrapper">
         <header class="game-header">
@@ -99,10 +99,15 @@
         <div class="overlay-content rules-content">
             <h2 class="overlay-title">Match Rules</h2>
             <img
-                src="../assets/rules.png"
+                src="/assets/rules.png"
                 alt="Rules"
                 class="rules-image"
             />
+
+            <p class="overlay-main-text">
+            🏆 Claim victory by seizing 2 points before your opponent even gets the chance.
+            </p>
+            
             <p class="overlay-text">
                 Match will start in
                 <span id="prematch-timer" class="highlight-number">10</span>
@@ -212,6 +217,7 @@
             </div>
         </div>
     </div>
+    
     <footer class="footer">
         <p>&copy; 2025 Rock-Paper-Scissors</p>
     </footer>
@@ -219,5 +225,4 @@
     <script src="/js/game.js"></script>
     <script src="/js/defaultGame.js"></script>
 </body>
-
 </html>

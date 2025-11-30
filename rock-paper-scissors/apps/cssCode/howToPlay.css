@@ -9,7 +9,7 @@ main.rules {
 
 .rules-inner {
     width: 100%;
-    max-width: var(--max-width);
+    max-width: 900px;
     margin: 0 auto;
     padding: 2.5rem 1.75rem;
     border-radius: 24px;
@@ -46,24 +46,24 @@ main.rules {
     font-size: 1.5rem;
     color: var(--text-muted);
     max-width: 520px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .rules-buttons {
     display: flex;
     gap: 1rem;
-    width: 100%;
-    max-width: 360px;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .rules-image{
-    margin-bottom: 1.5rem;
     display: flex;
     justify-content: center;  
 }
 
 .rules-image img {
-    width: 600px;
+    width: 100%;
     height: auto;
     object-fit: contain;
     border-radius: 12px;
@@ -72,7 +72,7 @@ main.rules {
 }
 
 .home-buttons {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
 }

@@ -1,4 +1,4 @@
-.game {
+.game-body {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@
     box-shadow: var(--shadow-soft);
     padding: 1.75rem 1.9rem 2rem;
     backdrop-filter: blur(18px);
-    margin: 2.5rem auto;
+    margin: 2.5rem auto 3rem;
 }
 
 .game-header {
@@ -83,7 +83,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2rem 6vw 5rem;
+    padding: 0rem 6vw 2rem;
 }
 
 .scoreboard {
@@ -133,6 +133,8 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.4rem;
+    margin: 1.4rem;
+
 }
 
 .chosen-column {
@@ -164,7 +166,7 @@
     aspect-ratio: 4 / 5;
     object-fit: contain;
     filter: drop-shadow(0 12px 22px rgba(15, 23, 42, 0.9));
-    opacity: 0; /* default tidak terlihat, muncul saat round selesai */
+    opacity: 0;
     transform: translateY(6px) scale(0.96);
     transition:
         opacity 0.18s ease-out,
@@ -186,6 +188,7 @@
     text-transform: uppercase;
     letter-spacing: 0.14em;
     color: var(--text-muted);
+    text-align: center;
 }
 
 .choices-grid {
@@ -241,16 +244,14 @@
 }
 
 /* ROUND TEXT */
-
 .round-result {
-    margin: 0.2rem 0 0;
-    font-size: 0.95rem;
+    margin: 0.9rem 0 0;
+    font-size: 1.5rem !important;;
     color: var(--text-muted);
     text-align: center;
 }
 
 /* OVERLAY & POPUP */
-
 .overlay {
     position: fixed;
     inset: 0;
@@ -286,7 +287,6 @@
 }
 
 /* RULES POPUP */
-
 .rules-content {
     padding-bottom: 1.4rem;
 }
@@ -323,8 +323,17 @@
     color: var(--text-muted);
 }
 
-/* POPUP ROUND & MATCH */
+.overlay-main-text {
+    margin: 0.7rem 0 1.3rem;
+    font-size: 1.15rem;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #fef9c3;
+    text-shadow: 0 0 14px rgba(250, 204, 21, 0.45);
+}
 
+/* POPUP ROUND & MATCH */
 .popup-card {
     position: relative;
     padding-bottom: 1.4rem;
@@ -402,8 +411,7 @@
     color: var(--text-muted);
 }
 
-/* BUTTONS (MATCH POPUP) */
-
+/* BUTTONS AFTER MATCH POPUP */
 .popup-buttons {
     margin-top: 0.85rem;
     display: flex;
